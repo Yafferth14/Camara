@@ -3,215 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=" flores tropicales, árboles, plantas medicinales y hongos.">
-    <title>FloraNica - Explora la riqueza natural de Nicaragua</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Convocatoria Sistemas Operativos y Redes 2025</title>
+
     <style>
-        /* Header delgado */
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 10px 0; /* más delgado */
-        }
-        header h1 {
+        body {
             margin: 0;
-            font-size: 2em;
-        }
-        header .subtitle {
-            margin: 5px 0 0 0;
-            font-size: 1em;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: linear-gradient(135deg, #2e7dff, #00c6ff);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
 
-        nav {
+        .container {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            padding: 40px 50px;
+            border-radius: 16px;
             text-align: center;
-            margin: 15px 0;
-        }
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #4CAF50;
-            font-weight: 500;
-        }
-        nav a:hover {
-            text-decoration: underline;
+            max-width: 700px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+            animation: fadeIn 1.2s ease;
         }
 
-        main {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 0 15px;
-        }
-
-        .category-section {
-            margin-bottom: 60px;
-        }
-
-        /* Encabezados de sección */
-        .category-section h2 {
-            text-align: center;
-            color: #2e7d32;
-            margin-top: 40px;
-            margin-bottom: 20px;
-        }
-
-        .category-section h3 {
-            color: #2e7d32;
-            margin-top: 20px;
+        h1 {
+            font-size: 2.4rem;
             margin-bottom: 10px;
         }
 
-        /* Grid de plantas */
-        .plant-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 400;
+            opacity: 0.9;
+            margin-bottom: 25px;
         }
 
-        .plant-card {
-            width: 250px;
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            text-align: center;
-            transition: transform 0.2s;
+        p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            opacity: 0.9;
         }
 
-        .plant-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            margin-top: 28px;
+            background: #ffffff;
+            color: #0078ff;
+            font-weight: bold;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: 0.3s;
         }
 
-        .plant-card:hover {
-            transform: translateY(-5px);
+        .btn:hover {
+            background: #e8e8e8;
+            transform: translateY(-3px);
         }
 
-        .scientific-name {
-            font-style: italic;
-            color: #555;
-            font-size: 0.9em;
-            margin-bottom: 15px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #f5f5f5;
-            margin-top: 40px;
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>🌿 FloraNica</h1>
-        <p class="subtitle">Explora la riqueza natural de Nicaragua</p>
-    </header>
+    <div class="container">
+        <h1>Bienvenidos a la Convocatoria<br>de Sistemas Operativos y Redes</h1>
+        <h2>Edición 2025</h2>
 
-    <nav>
-        <a href="#flores-tropicales">Flores tropicales</a>
-        <a href="#arboles-nativos">Árboles nativos</a>
-        <a href="#plantas-medicinales">Plantas medicinales</a>
-        <a href="#hongos">Hongos</a>
-    </nav>
+        <p>
+            Nos alegra contar con tu participación en esta nueva convocatoria.
+            Durante esta edición exploraremos conceptos fundamentales y avanzados
+            de los sistemas operativos, así como el funcionamiento y diseño de redes modernas.
+        </p>
 
-    <main>
-        <!-- Flores Tropicales -->
-        <section id="flores-tropicales" class="category-section">
-            <h2>Flores Tropicales</h2>
-            <div class="plant-grid">
-                <a href="orquidea.html" class="plant-card">
-                    <img src="imgPlantas/orquidea.jpg" alt="Orquídea">
-                    <h3>Orquídea</h3>
-                    <p class="scientific-name">Guarianthe skinneri</p>
-                </a>
-                <a href="sacuanjoche.html" class="plant-card">
-                    <img src="imgPlantas/Sacuanjoche.jpg" alt="Sacuanjoche">
-                    <h3>Sacuanjoche</h3>
-                    <p class="scientific-name">Plumeria rubra</p>
-                </a>
-                <a href="malinche.html" class="plant-card">
-                    <img src="imgPlantas/Malinche.jpg" alt="Flor de Malinche">
-                    <h3>Flor de Malinche</h3>
-                    <p class="scientific-name">Delonix regia</p>
-                </a>
-            </div>
-        </section>
+        <p>
+            Prepárate para aprender, experimentar y desarrollar habilidades esenciales
+            para el entorno tecnológico actual.
+        </p>
 
-        <!-- Árboles Nativos -->
-        <section id="arboles-nativos" class="category-section">
-            <h2>Árboles Nativos</h2>
-            <div class="plant-grid">
-                <a href="ceiba.html" class="plant-card">
-                    <img src="imgPlantas/Ceiba.jpg" alt="Ceiba">
-                    <h3>Ceiba</h3>
-                    <p class="scientific-name">Ceiba pentandra</p>
-                </a>
-                <a href="guanacaste.html" class="plant-card">
-                    <img src="imgPlantas/arbolGuanacaste.jpg" alt="Guanacaste">
-                    <h3>Guanacaste</h3>
-                    <p class="scientific-name">Enterolobium cyclocarpum</p>
-                </a>
-                <a href="madrono.html" class="plant-card">
-                    <img src="imgPlantas/madroñoArbol.png" alt="Madroño">
-                    <h3>Madroño</h3>
-                    <p class="scientific-name">Calycophyllum candidissimum</p>
-                </a>
-            </div>
-        </section>
-
-        <!-- Plantas Medicinales -->
-        <section id="plantas-medicinales" class="category-section">
-            <h2>Plantas Medicinales</h2>
-            <div class="plant-grid">
-                <a href="zacate-limon.html" class="plant-card">
-                    <img src="imgPlantas/ZacateLimon.jpg" alt="Zacate de Limón">
-                    <h3>Zacate de Limón</h3>
-                    <p class="scientific-name">Cymbopogon citratus</p>
-                </a>
-                <a href="jengibre.html" class="plant-card">
-                    <img src="imgPlantas/Jengibre.jpg" alt="Jengibre">
-                    <h3>Jengibre</h3>
-                    <p class="scientific-name">Zingiber officinale</p>
-                </a>
-                <a href="hierbabuena.html" class="plant-card">
-                    <img src="imgPlantas/HierbaBuena.jpg" alt="Hierbabuena">
-                    <h3>Hierbabuena</h3>
-                    <p class="scientific-name">Mentha spicata</p>
-                </a>
-            </div>
-        </section>
-
-        <!-- Hongos -->
-        <section id="hongos" class="category-section">
-            <h2>Hongos</h2>
-            <div class="plant-grid">
-                <a href="amanita.html" class="plant-card">
-                    <img src="imgPlantas/muscaria.jpg" alt="Amanita muscaria">
-                    <h3>Amanita muscaria</h3>
-                    <p class="scientific-name">Amanita muscaria</p>
-                </a>
-                <a href="seta-ostra.html" class="plant-card">
-                    <img src="imgPlantas/SetaDeOstra.jpg" alt="Seta de Ostra">
-                    <h3>Seta de Ostra</h3>
-                    <p class="scientific-name">Pleurotus ostreatus</p>
-                </a>
-                <a href="Ganoderma.html" class="plant-card">
-                    <img src="imgPlantas/Ganoderma.jpg" alt="Ganoderma">
-                    <h3>Ganoderma</h3>
-                    <p class="scientific-name">Ganoderma spp</p>
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 FloraNica</p>
-    </footer>
+        <a href="#" class="btn">Comenzar</a>
+    </div>
 </body>
 </html>
